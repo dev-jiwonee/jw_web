@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/assets/globals.css";
+import { pyeongchangpeace } from "@/assets/fonts";
 
 export const metadata: Metadata = {
   title: "JIWON",
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${pyeongchangpeace.variable}`}>
       <body>{children}</body>
     </html>
   );
