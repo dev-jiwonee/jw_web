@@ -3,6 +3,7 @@
 @theme {
   /* font */
   --font-pcp: var(--font-pcp);
+  --font-paperlogy: var(--font-paperlogy);
 
   /* colors */
   --color-black: #333333;
