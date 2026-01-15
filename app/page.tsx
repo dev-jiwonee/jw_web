@@ -1,6 +1,6 @@
-import Footer from "@/compoents/blocks/Footer";
-import Header from "@/compoents/blocks/Header";
-import MainScreen from "@/compoents/screens/MainScreen";
+import Footer from "@/components/blocks/Footer";
+import Header from "@/components/blocks/Header";
+import MainScreen from "@/components/screens/MainScreen";
 import { redirect } from "next/navigation";
 
 export default function Home() {
