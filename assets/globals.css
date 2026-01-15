@@ -44,3 +44,19 @@ body {
     background-position: 0% 50%;
   }
 }
+
+@utility animate-mouse-scroll {
+  animation: mouse-wheel 2s infinite;
+}
+
+@keyframes mouse-wheel {
+  0% {
+    top: 0.75rem;
+    opacity: 1;
+  }
+  100% {
+    top: 1.75rem;
+    opacity: 0;
+  }
+  
+}
