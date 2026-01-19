@@ -8,11 +8,11 @@ const Header = () => {
         <a href="#aboutMe" className="px-2 opacity-80 hover:opacity-100 hover:text-pink-500 transition">
           About Me
         </a>
-        <a href="#skill" className="px-2 opacity-80 hover:opacity-100 hover:text-green-500 transition">
-          Skill
+        <a href="#skills" className="px-2 opacity-80 hover:opacity-100 hover:text-green-500 transition">
+          Skills
         </a>
-        <a href="#work" className="px-2 opacity-80 hover:opacity-100 hover:text-orange-500 transition">
-          Work
+        <a href="#works" className="px-2 opacity-80 hover:opacity-100 hover:text-orange-500 transition">
+          Works
         </a>
         <a href="#contact" className="px-2 opacity-80 hover:opacity-100 hover:text-blue-500 transition">
           Contact
