@@ -16,8 +16,8 @@ export default function AboutMeScreen() {
             <Image
               src="/images/profile_photo.png"
               alt="profile photo"
-              layout="fill"
-              objectFit="cover"
+              width={346}
+              height={460}
             />
           </div>
           <div className="px-5 space-y-4">
