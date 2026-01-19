@@ -21,6 +21,10 @@
   --color-green-50: #F9FFF6;
   --color-green-100: #E5FFDA;
   --color-green-500: #3DCE00;
+
+  /* text size */
+  --text-xxs: 0.6875rem;
+  --text-xxs--line-height: 1rem; 
 }
 
 body {
