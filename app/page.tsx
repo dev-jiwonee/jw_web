@@ -18,6 +18,9 @@ export default function Home() {
       <SkillsScreen />
       <WorksScreen />
       <ContactScreen />
+      <div className="sticky w-full bottom-0 h-0 z-100">
+        <TopButton />
+      </div>
       <Footer />
     </main>
   );
