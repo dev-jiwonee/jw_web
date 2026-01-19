@@ -16,7 +16,7 @@ const SectionLayout = ({
   bgColor = "bg-white",
 }: SectionLayoutProps) => {
   return (
-    <section id={id} className={`${bgColor} min-h-dvh pt-25 ${className}`}>
+    <section id={id} className={`${bgColor} min-h-dvh py-25 ${className}`}>
       <div className="w-full max-w-[1400] mx-auto pt-15">
         <h2 className="mb-10 font-bold text-4xl">{title}</h2>
         {children}
