@@ -18,6 +18,13 @@ const Header = () => {
     setIsScroll(window.scrollY > 100);
   };
 
+  // 메뉴 클릭시 스크롤 이동 - url 변경 안함
+  const handleScrollSection = (e: any, id: string) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll(); // 새로고침 시 반영
@@ -34,7 +41,6 @@ const Header = () => {
       },
       {
         threshold: 0.5, // 화면에 절반 이상 보이면 active
-        rootMargin: "-60px 0px 0px 0px", // 헤더 높이 보정 (필요 시 조정)
       },
     );
 
@@ -57,13 +63,16 @@ const Header = () => {
       }
     >
       <h1 className="text-2xl tracking-wide">
-        <a href="#home">JIWON's Portfolio</a>
+        <a href="#home" onClick={(e) => handleScrollSection(e, "home")}>
+          JIWON's Portfolio
+        </a>
       </h1>
       <nav className="flex items-center gap-x-15 text-xl">
         {menuItems.map(({ id, label, color }) => (
           <a
             key={id}
             href={`#${id}`}
+            onClick={(e) => handleScrollSection(e, id)}
             className={`px-2 hover:opacity-100 transition ${activeId === id ? `${color} opacity-100` : `hover:${color} opacity-80`}`}
           >
             {label}
