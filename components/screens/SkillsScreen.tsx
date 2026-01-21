@@ -35,10 +35,10 @@ const SkillBlock = ({ title, items }: SkillBlockProps) => {
       <div className="w-full grid grid-cols-3 gap-8">
         {items.map((item, idx) => (
           <div key={idx} className="flex items-start gap-x-1.5">
-            <div className="w-6 h-6 bg-zinc-100">
+            <div className="w-6 h-6">
               {item.icon && (
                 <Image
-                  src={`/images/${item.icon}`}
+                  src={`/icons/${item.icon}`}
                   width={24}
                   height={24}
                   alt={item.name}
