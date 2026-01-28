@@ -56,24 +56,28 @@ const Header = () => {
   return (
     <header
       className={
-        "fixed top-0 left-0 right-0 flex items-center justify-between px-4 md:px-5 lg:px-8 xl:px-15 border-b font-pcp font-bold z-10 transition-all duration-200 " +
+        "fixed top-0 left-0 right-0 flex items-center justify-between px-3 sm:px-7 lg:px-10 xl:px-14 border-b font-pcp font-bold z-10 transition-all duration-200 " +
         (isScroll
-          ? "h-12 md:h-16 lg:h-18 xl:h-20 border-white/30 shadow bg-white/30 backdrop-blur-sm"
-          : "h-12 md:h-16 lg:h-18 xl:h-25 border-transparent shadow-transparent bg-white/0")
+          ? "h-12 sm:h-16 lg:h-18 xl:h-20 border-white/30 shadow bg-white/30 backdrop-blur-sm"
+          : "h-12 sm:h-16 lg:h-18 xl:h-25 border-transparent shadow-transparent bg-white/0")
       }
     >
-      <h1 className="text-sm md:text-lg lg:text-xl xl:text-2xl tracking-wide">
-        <a href="#home" onClick={(e) => handleScrollSection(e, "home")}>
+      <h1>
+        <a
+          href="#home"
+          onClick={(e) => handleScrollSection(e, "home")}
+          className="inline-block p-1 text-sm sm:text-lg lg:text-xl xl:text-2xl tracking-wide"
+        >
           JIWON's Portfolio
         </a>
       </h1>
-      <nav className="hidden md:flex items-center gap-x-6 lg:gap-x-12 xl:gap-x-15 text-base lg:text-lg xl:text-xl">
+      <nav className="hidden sm:flex items-center gap-x-6 lg:gap-x-12 xl:gap-x-15">
         {menuItems.map(({ id, label, color }) => (
           <a
             key={id}
             href={`#${id}`}
             onClick={(e) => handleScrollSection(e, id)}
-            className={`px-2 hover:opacity-100 transition ${activeId === id ? `${color} opacity-100` : `hover:${color} opacity-80`}`}
+            className={`inline-block p-1 text-base lg:text-lg xl:text-xl hover:opacity-100 transition ${activeId === id ? `${color} opacity-100` : `hover:${color} opacity-80`}`}
           >
             {label}
           </a>
