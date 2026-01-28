@@ -1,30 +1,69 @@
 @import "tailwindcss";
 
 @theme {
-  /* font */
+  /* font family */
   --font-pcp: var(--font-pcp);
   --font-paperlogy: var(--font-paperlogy);
 
   /* colors */
   --color-black: #333333;
-  --color-pink-50: #FFF1F7;
-  --color-pink-100: #FFD6E8;
-  --color-pink-500: #FF2D87;
-  --color-orange-50: #FFFDE9;
-  --color-orange-100: #FFF7EB;
-  --color-orange-200: #FFFBD3;
-  --color-orange-300: #FFC87C;
-  --color-orange-500: #FF9500;
-  --color-blue-50: #EFF7FF;
-  --color-blue-100: #CCE5FF;
-  --color-blue-500: #008CFF;
-  --color-green-50: #F9FFF6;
-  --color-green-100: #E5FFDA;
-  --color-green-500: #3DCE00;
+  --color-pink-50: #fff1f7;
+  --color-pink-100: #ffd6e8;
+  --color-pink-500: #ff2d87;
+  --color-orange-50: #fffde9;
+  --color-orange-100: #fff7eb;
+  --color-orange-200: #fffbd3;
+  --color-orange-300: #ffc87c;
+  --color-orange-500: #ff9500;
+  --color-blue-50: #eff7ff;
+  --color-blue-100: #cce5ff;
+  --color-blue-500: #008cff;
+  --color-green-50: #f9fff6;
+  --color-green-100: #e5ffda;
+  --color-green-500: #3dce00;
 
-  /* text size */
+  /* font size */
   --text-xxs: 0.6875rem;
-  --text-xxs--line-height: 1rem; 
+  --text-xxs--line-height: 0.8125rem;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 0.875rem;
+
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1rem;
+
+  --text-base: 1rem;
+  --text-base-line-height: 1.125rem;
+
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.25rem;
+
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.5rem;
+
+  --text-2xl: 1.5rem;
+  --text-2xl-line-height: 1.75rem;
+
+  --text-3xl: 1.75rem;
+  --text-3xl-line-height: 2rem;
+
+  --text-4xl: 2rem;
+  --text-4xl-line-height: 2.25rem;
+
+  --text-5xl: 2.25rem;
+  --text-5xl-line-height: 2.625rem;
+
+  --text-6xl: 2.5rem;
+  --text-6xl-line-height: 3rem;
+
+  --text-7xl: 2.75rem;
+  --text-7xl--line-height: 3.25rem;
+
+  --text-8xl: 3rem;
+  --text-8xl--line-height: 3.5rem;
+
+  --text-9xl: 4rem;
+  --text-9xl--line-height: 4.75rem;
 }
 
 body {
@@ -62,5 +101,4 @@ body {
     top: 1.75rem;
     opacity: 0;
   }
-  
 }
