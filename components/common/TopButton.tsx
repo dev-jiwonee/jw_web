@@ -26,7 +26,7 @@ const TopButton = () => {
     <button
       onClick={handleScrollTop}
       className={
-        "absolute right-11 bottom-11 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 shadow " +
+        "absolute right-5 lg:right-11 bottom-5 lg:bottom-11 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 shadow " +
         (isScroll
           ? "opacity-100 cursor-pointer"
           : "opacity-0 pointer-events-none")
