@@ -3,7 +3,7 @@ import { IconArrowR } from "../common/icons";
 
 const WorkList = async () => {
   const data = await getNotionData();
-  
+
   return data.map(({ id, title, desc, period, skill }: any) => (
     <div
       key={id}
@@ -31,9 +31,9 @@ const WorkList = async () => {
           </div>
         )}
       </div>
-      <div className="self-center group-hover:text-orange-300 transition">
+      {/* <div className="self-center group-hover:text-orange-300 transition">
         <IconArrowR className="w-5 h-5 lg:w-6 lg:h-6" />
-      </div>
+      </div> */}
     </div>
   ));
 };
