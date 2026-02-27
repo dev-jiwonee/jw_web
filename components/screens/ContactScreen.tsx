@@ -31,11 +31,11 @@ const ContactScreen = () => {
             label="Github"
             href={SNS_LINK.github}
           />
-          {/* <BtnSnsLink
+          <BtnSnsLink
             iconSrc="/icons/ic_note.png"
             label="Dev Note"
             href={SNS_LINK.dev_note}
-          /> */}
+          />
         </div>
       </div>
       <p className="absolute bottom-8 left-1/2 -translate-x-1/2 font-light text-xxs xl:text-xs text-zinc-400">

@@ -11,6 +11,9 @@ const Footer = () => {
         <a href={SNS_LINK.github} target="_blank" rel="noreferrer" className="inline-block">
           Github
         </a>
+        <a href={SNS_LINK.dev_note} target="_blank" rel="noreferrer" className="inline-block">
+          DEV NOTE
+        </a>
       </div>
     </footer>
   );
