@@ -50,8 +50,8 @@ export const PERSONAL_INFO = {
     },
     {
       title: "일본어능력시험",
-      subtitle: "JLPT N3",
-      period: "2025.08 일본 국제 교육 지원협회",
+      subtitle: "JLPT N2",
+      period: "2026.01 일본 국제 교육 지원협회",
     },
   ],
 };
