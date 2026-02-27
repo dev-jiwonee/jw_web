@@ -12,7 +12,7 @@ const Footer = () => {
           Github
         </a>
         <a href={SNS_LINK.dev_note} target="_blank" rel="noreferrer" className="inline-block">
-          DEV NOTE
+          Dev note
         </a>
       </div>
     </footer>
