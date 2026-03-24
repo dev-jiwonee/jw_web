@@ -31,7 +31,7 @@ const SkillBlock = ({ title, items }: SkillBlockProps) => {
                 {item.name}
               </p>
               {item.desc && (
-                <p className="text-xs text-zinc-500">{item.desc}</p>
+                <p className="text-xs text-zinc-500 leading-4">{item.desc}</p>
               )}
             </div>
           </div>
