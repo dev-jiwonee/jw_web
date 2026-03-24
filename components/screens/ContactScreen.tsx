@@ -39,7 +39,7 @@ const ContactScreen = () => {
         </div>
       </div>
       <p className="absolute bottom-8 left-1/2 -translate-x-1/2 font-light text-xxs xl:text-xs text-zinc-400">
-        Last updated February 2026
+        Last updated March 2026
       </p>
     </SectionLayout>
   );
