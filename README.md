@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍀 이지원 포트폴리오 사이트
+> 웹 퍼블리셔 포트폴리오 - 경력, 기술 스택, 작업 이력을 한눈에 볼 수 있는 이력서형 포트폴리오 사이트입니다.
 
-## Getting Started
+🔗 **배포 사이트** : [https://jiwonee-portfolio.vercel.app/](https://jiwonee-portfolio.vercel.app/)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🚀 프로젝트 소개
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+웹 퍼블리셔로서의 경력, 기술 스택, 작업 이력을 한눈에 볼 수 이있도록 이력서 형식으로 제작한 개인 포트폴리오 사이트 입니다. Notion API를 연동하여 작업물 데이터를 관리하고, 컴포넌트 단위의 구조로 유지보수가 용이하도록 설계했습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ⚙️ 기술 스택
+| 분류 | 기술 |
+|------|------|
+| 프레임워크 | Next.js 16 |
+| 스타일링 | Tailwind CSS 4 |
+| 외부 연동 | Notion API (`@notionhq/client`) |
+| 배포 | Vercel |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### ✨ 주요 기능
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **반응형 디자인** - 모바일/태블릿/데스크탑 모든 환경에 대응
+- **컴포넌트 기반 구조** - 재사용 가능한 컴포넌트 단위로 코드 설계
+- **Notion API 연동** - Notion 데이터베이스를 활용하여 작업물을 관리
+- **이력서형 구성** - 경력, 스킬, 작업 이력 등 프로필 정보를 섹션별로 구성
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 📄 라이선스
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+본 프로젝트의 디자인 및 코드는 개인 포트폴리오 목적으로 제작되었습니다.
+무단 복제 및 상업적 이용을 금합니다.
