@@ -1,5 +1,6 @@
 import { getNotionData } from "@/utils/notion";
 import { IconArrowR } from "../common/icons";
+import Link from "next/link";
 
 const WorkList = async () => {
   let data = [];
@@ -12,10 +13,13 @@ const WorkList = async () => {
     );
   }
 
-  return data.map(({ id, title, desc, period, skill }: any) => (
-    <div
+  return data.map(({ id, title, desc, period, skill, url }: any) => (
+    <Link
       key={id}
-      className="flex items-start justify-between gap-4 lg:gap-5 p-5 lg:p-6 rounded-2xl shadow-block bg-white hover:cursor-pointer"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex items-start justify-between gap-4 lg:gap-5 p-5 lg:p-6 rounded-2xl bg-white/60 backdrop-blur-sm border-2 border-white/80 hover:border-orange-300 hover:bg-white active:border-orange-300 active:bg-white transition-all duration-200"
     >
       {/* <Link> */}
       <div className="flex-1">
@@ -41,10 +45,10 @@ const WorkList = async () => {
           </div>
         )}
       </div>
-      {/* <div className="self-center group-hover:text-orange-300 transition">
+      <div className="self-center text-zinc-300 group-hover:text-orange-300 transition-colors duration-200">
         <IconArrowR className="w-5 h-5 lg:w-6 lg:h-6" />
-      </div> */}
-    </div>
+      </div>
+    </Link>
   ));
 };
 
