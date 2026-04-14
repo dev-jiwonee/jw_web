@@ -40,7 +40,8 @@ const Header = () => {
         });
       },
       {
-        threshold: 0.5, // 화면에 절반 이상 보이면 active
+        rootMargin: "-80px 0px -40% 0px",
+        threshold: 0,
       },
     );
 
