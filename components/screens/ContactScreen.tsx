@@ -11,13 +11,17 @@ const ContactScreen = () => {
           <p className="mb-2.5 sm:mb-4 lg:mb-6 text-sm sm:text-xl lg:text-2xl">
             궁금한 점이 있으시면 언제든 연락주세요 !
           </p>
-          <p className="mb-5 sm:mb-8 lg:mb-10 font-semibold text-2xl sm:text-8xl lg:text-9xl">{PERSONAL_INFO.email}</p>
+          <p className="mb-5 sm:mb-8 lg:mb-10 font-semibold text-2xl sm:text-8xl lg:text-9xl">
+            {PERSONAL_INFO.email}
+          </p>
           <a
             href={`mailto:${PERSONAL_INFO.email}`}
             className="inline-flex items-center gap-1.5 sm:gap-2 ml-auto px-5 sm:px-8 lg:px-9 py-3 sm:py-4 lg:py-5 bg-white/80 rounded-full hover:bg-white"
           >
             <IconMail className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
-            <span className="font-medium text-sm sm:text-lg lg:text-xl">메일 보내기</span>
+            <span className="font-medium text-sm sm:text-lg lg:text-xl">
+              메일 보내기
+            </span>
           </a>
         </div>
         <div className="flex flex-wrap gap-2 sm:gap-4">
@@ -39,7 +43,7 @@ const ContactScreen = () => {
         </div>
       </div>
       <p className="absolute bottom-8 left-1/2 -translate-x-1/2 font-light text-xxs xl:text-xs text-zinc-400">
-        Last updated March 2026
+        Last updated {process.env.NEXT_PUBLIC_LAST_UPDATED}
       </p>
     </SectionLayout>
   );
