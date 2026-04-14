@@ -2,7 +2,15 @@ import { getNotionData } from "@/utils/notion";
 import { IconArrowR } from "../common/icons";
 
 const WorkList = async () => {
-  const data = await getNotionData();
+  let data = [];
+  try {
+    data = await getNotionData();
+  } catch (error) {
+    console.error("❌ WorkList 데이터 로드 실패:", error);
+    return (
+      <p className="text-sm text-red-400">데이터를 불러오지 못했습니다.</p>
+    );
+  }
 
   return data.map(({ id, title, desc, period, skill }: any) => (
     <div
@@ -17,7 +25,9 @@ const WorkList = async () => {
           </p>
           <p className="text-xs text-zinc-500 font-light">{period}</p>
         </div>
-        <p className="sm:min-h-10 font-light text-xxs lg:text-xs text-zinc-600 leading-normal">{desc}</p>
+        <p className="sm:min-h-10 font-light text-xxs lg:text-xs text-zinc-600 leading-normal">
+          {desc}
+        </p>
         {skill.length > 0 && (
           <div className="flex flex-wrap gap-x-2 gap-y-1 mt-4">
             {skill.map((sk: string, i: number) => (
