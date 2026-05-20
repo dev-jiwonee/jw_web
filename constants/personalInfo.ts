@@ -44,14 +44,19 @@ export const PERSONAL_INFO = {
   ],
   certificates: [
     {
-      title: "컴퓨터 활용 능력",
-      subtitle: "2급",
-      period: "2015.08 대한상공회의소",
+      title: "웹디자인 개발 기능사",
+      subtitle: "필기 합격",
+      period: "2026.04 한국산업인력공단",
     },
     {
       title: "일본어능력시험",
       subtitle: "JLPT N2",
       period: "2026.01 일본 국제 교육 지원협회",
+    },
+    {
+      title: "컴퓨터 활용 능력",
+      subtitle: "2급",
+      period: "2015.08 대한상공회의소",
     },
   ],
 };
